@@ -1,0 +1,39 @@
+POST http://localhost:7000/register
+Content-Type: application/json
+
+{
+    "name": "Ange Sepdeu",
+    "email": "chriskameni25@gmail.com",
+    "password": 12345
+}
+
+###
+
+POST http://localhost:7000/activate/chriskameni25@gmail.com/Ange Sepdeu/12345
+Content-Type: application/json
+
+{
+    "code":  8756105
+}
+
+###
+POST http://localhost:7000/friendRequest
+Content-Type: application/json
+
+###
+POST http://localhost:7000/updateSelf/Chris/chriskameni@gmail.com
+Content-Type: application/json
+
+{
+    "name": "Chris",
+    "email": "kameni@gmail.com"
+}
+
+###
+POST http://localhost:7000/login
+Content-Type: application/json
+
+{
+    "email": "chriskameni25@gmail.com",
+    "password": "12345"
+}
